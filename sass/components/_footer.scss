@@ -1,0 +1,23 @@
+@import "../utils/vars";
+.footer-section{
+    width:480px;
+}
+.container-footer{
+    width:100%;
+    margin: 0 auto;
+}
+.footer-grid{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    gap:42px;
+}
+.link-icon{
+   width:30px;
+   height:30px;
+        &:hover{
+            fill:$button-bgcolor;
+        }
+
+    
+}

@@ -11,21 +11,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="./css/main.min.css" rel="stylesheet">
+<title>Blog
+</title>
   </head>
-  <main>
-  <header>
-<ul>
-    <li><a href="./works.html">Works</a></li>
-    <li><a href="./blog.html">Blog</a></li>
-    <li><a href="./index.html">Contacts</a></li>
+ <body>
+  <header class="page-header">
+    <div class="container">
+    <button class= "menu-toggle js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu" type="button"><svg>
+        <use href="./images/icons.svg#icon-Burger"></use>
+    </svg>
+</button>
+<ul class="page-header-grid">
+    <li class="page-header-item"><a class="page-header-link"href="./works.html">Works</a></li>
+    <li class="page-header-item"><a class="page-header-link"href="./blog.html">Blog</a></li>
+    <li class="page-header-item"><a class="page-header-link" href="./index.html">Contacts</a></li>
 </ul>
+</div>
   </header>
+  <main>
   <h1>
     Blog
   </h1>
   <section>
     <ul>
-        <li><h2>
+        <li><h2 class="section-title">
             UI Interactions of the week
 </h2>
 <p>
@@ -39,7 +51,7 @@
 
         </li>
         <li>
-            <h2>
+            <h2 class="section-title">
                 UI Interactions of the week
             </h2>
             <p>
@@ -53,7 +65,7 @@
             
         </li>
         <li>
-            <h2>
+            <h2 class="section-title">
                 UI Interactions of the week
         </h2>
         <p>
@@ -67,7 +79,7 @@
             
         </li>
         <li>
-            <h2>
+            <h2 class="section-title">
                 UI Interactions of the week
             </h2>
             <p>12 Feb 2019
@@ -82,38 +94,64 @@
         </li>
     </ul>
   </section>
-  <footer>
-    <ul>
-        <li>
-<a href="#">
-    <svg>
+  </main>
+  <footer class="footer-section">
+    <div class="container-footer">
+    <ul class="footer-grid">
+        <li class="footer-grid-item">
+<a  class="link" href="#">
+    <svg class="link-icon">
         <use href="/images/icons.svg#icon-facebook"></use>
     </svg>
 </a>
         </li>
-        <li>
-            <a href="#">
-                <svg>
+        <li class="footer-grid-item">
+            <a  class="link" href="#">
+                <svg class="link-icon">
                     <use href="/images/icons.svg#icon-instagram"></use>
                 </svg>
             </a>
             
         </li>
-        <li>
-            <a href="#">
-                <svg>
+        <li class="footer-grid-item">
+            <a  class="link"href="#">
+                <svg class="link-icon">
                     <use href="/images/icons.svg#icon-twitter"></use>
                 </svg>
             </a>
         </li>
-        <li>
-            <a href="#">
-                <svg>
+        <li class="footer-grid-item">
+            <a class="link" href="#">
+                <svg class="link-icon">
                     <use href="/images/icons.svg#icon-linkedin"></use>
                 </svg>
             </a>
         </li>
     </ul>
+</div>
   </footer>
-  </main>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li ><a  class= "mobile-menu-link" href="blog.html" class="link">Blog</a></li>
+      <li><a class= "mobile-menu-link" href="works.html" class="link">Works</a></li>
+      <li><a class= "mobile-menu-link" href="index.html" class="link">Contacts</a></li>
+    </ul>
+  </div>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
 </html>
