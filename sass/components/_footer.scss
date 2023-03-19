@@ -5,11 +5,13 @@
 .container-footer{
     width:100%;
     margin: 0 auto;
+    text-align: center;
 }
 .footer-grid{
     list-style-type: none;
     display:flex;
     align-items: center;
+    justify-content: center;
     gap:42px;
 }
 .link-icon{
